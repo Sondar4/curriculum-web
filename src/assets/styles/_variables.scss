@@ -1,0 +1,30 @@
+@use "sass:color";
+
+$font-family-monospace: "Anonymous Pro", monospace;
+$font-family-sans-serif: "Open Sans", sans-serif;
+$font-family-serif: "Georgia", "Times New Roman", serif;
+
+$root-font-size: 21px;
+$root-line-height: 32px;
+
+$body-color: #eee;
+$footer-color: #393e46;
+$section-color1: #ddd;
+$section-color2: #222831;
+
+$text-color: #222831;
+$text-color2: #eee;
+$link-color: #393e46;
+$link-hover-color: #00adb5;
+
+$nav-height: 120px;
+$footer-height: 120px;
+
+%content-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+// $uoc-bg: color.scale($uoc-masterbrand, $lightness: 70%);

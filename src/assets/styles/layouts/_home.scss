@@ -1,0 +1,167 @@
+/*------------------------------------*\
+  #GENERAL
+\*------------------------------------*/
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+a:hover, a:active, a:focus {
+  outline: 0;
+}
+
+body {
+  padding: 0;
+  margin: 0;
+  font-family: $font-family-sans-serif;
+  line-height: $root-line-height;
+  background-color: $body-color;
+  color: #222831;
+}
+
+%section {
+  @extend %content-block;
+  min-height: 100vh;
+}
+
+.container {
+  @extend %content-block;
+  padding: 10px;
+}
+
+/*------------------------------------*\
+  #NAVIGATION
+\*------------------------------------*/
+
+.nav {
+  @extend %content-block;
+  position: relative;
+  height: $nav-height;
+}
+
+.nav-bar {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  width: 85%;
+  height: 100%;
+  padding-bottom: 20px;
+}
+
+.nav-item {
+  padding: 0 10px;
+  margin: 0 5px;
+  list-style-type: none;
+}
+
+@media (min-width: 900px) {
+  .nav-bar {
+    justify-content: flex-start;
+  }
+  .nav-item {
+    padding: 0 20px;
+    margin: 0 10px;
+  }
+}
+
+.nav-link,
+.nav-link:visited,
+.nav-link:active {
+  font-size: $root-font-size;
+  color: $link-color;
+  text-decoration: none;
+  -webkit-transition: color .25s linear;
+  transition: color .15s linear;
+}
+
+.nav-link:hover {
+  color: $link-hover-color;
+}
+
+/*------------------------------------*\
+  #SECTION 1 - PRESENTATION
+\*------------------------------------*/
+
+.section-presentation {
+  @extend %section;
+  flex-direction: column;
+  justify-content: flex-start;
+  min-height: calc(100vh - #{$nav-height});
+}
+
+.profile-image {
+  max-width: 400px;
+  max-height: 400px;
+  padding: 10px;
+  margin-bottom: 30px;
+}
+
+.name-and-title {
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.name-and-title {
+  h1, h2 {
+    width: 100%;
+    text-align: center;
+  }
+  h1 {
+    font-size: 1.7 * $root-font-size;
+    line-height: 1.7 * $root-line-height;
+    font-weight: 600;
+  }
+  h2 {
+    font-size: 1.5 * $root-font-size;
+    line-height: 1.5 * $root-line-height;
+    font-weight: 500;
+  }
+}
+
+/*------------------------------------*\
+  #SECTION 2 - PROFILE
+\*------------------------------------*/
+
+.section-profile {
+  @extend %section;
+  background-color: $section-color1;
+}
+
+.stack-grid {
+  margin: 0;
+  padding: 20px;
+  min-height: calc(100vh - 40px);
+  min-width: calc(100vw - 40px);
+  display: grid;
+  grid-template-columns: 100%; 
+}
+
+.stack {
+  padding: 20px;
+  background-color: $body-color;
+}
+
+.stack-label i {
+  padding-right: 6px;
+}
+
+/*------------------------------------*\
+  #SECTION 3 - ACADEMIC
+\*------------------------------------*/
+
+.section-academic {
+  @extend %section;
+  background-color: $section-color2;
+}
+
+.section-work {
+  @extend %section;
+  background-color: $section-color1;
+}
+
+.footer {
+  height: $footer-height;
+  background-color: $footer-color;
+}
