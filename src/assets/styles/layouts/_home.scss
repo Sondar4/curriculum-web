@@ -12,6 +12,10 @@ a:hover, a:active, a:focus {
   outline: 0;
 }
 
+strong {
+  font-weight: 600;
+}
+
 body {
   padding: 0;
   margin: 0;
@@ -136,7 +140,7 @@ body {
   }
 }
 
-@media (min-width: 1260px) {
+@media (min-width: 1080px) {
   .name-and-title {
     margin-top: 20px;
   }
@@ -162,7 +166,8 @@ body {
   min-height: calc(100vh - 40px);
   min-width: calc(100vw - 40px);
   display: grid;
-  grid-template-columns: 100%; 
+  grid-template-columns: 100%;
+  align-items: normal;
 }
 
 @media (min-width: 720px) {
@@ -174,24 +179,18 @@ body {
 
 .stack {
   padding: 20px;
-  margin: 10px;
+  margin: 5vh 2vw;
 
   border: 2px solid #bbb;
   border-radius: 5px;
   box-shadow: 1px 1px 2px #aaa;
 
-  -webkit-transition: background-color .25s linear;
-  -moz-transition: background-color .25s linear;
   transition: background-color .25s linear;
-
-  -webkit-transition: box-shadow .25s linear;
-  -moz-transition: box-shadow .25s linear;
   transition: box-shadow .25s linear;
 }
 
 .stack-label {
-  -webkit-transition: color .25s linear;
-  -moz-transition: color .25s linear;
+  color: $strong-color;
   transition: color .25s linear;
 }
 
@@ -202,8 +201,11 @@ body {
 .stack-description {
   margin-top: 10px;
 
-  -webkit-transition: color .25s linear;
-  -moz-transition: color .25s linear;
+  transition: color .25s linear;
+}
+
+.stack-description strong {
+  color: $strong-color;
   transition: color .25s linear;
 }
 
@@ -214,9 +216,11 @@ body {
   .stack-label {
     color: #00adb5;
   }
-
   .stack-description {
     color: #393e46;
+  }
+  .stack-description strong {
+    color: #00adb5;
   }
 }
 

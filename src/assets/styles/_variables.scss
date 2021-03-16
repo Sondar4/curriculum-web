@@ -9,13 +9,14 @@ $root-line-height: 32px;
 
 $body-color: #eee;
 $footer-color: #393e46;
-$section-color1: #ddd;
+$section-color1: color.adjust($body-color, $blackness: +5%);
 $section-color2: #222831;
 
 $text-color: #222831;
 $text-color2: #eee;
 $link-color: #393e46;
 $link-hover-color: #00adb5;
+$strong-color: color.adjust($link-hover-color, $blackness: +20%);
 
 $show-naw-width: 720px;
 $nav-height-hidden: 60px;
