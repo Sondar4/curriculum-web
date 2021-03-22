@@ -157,13 +157,20 @@ body {
 
 .section-profile {
   @extend %section;
+  padding-top: 40px;
   background-color: $section-color1;
+  flex-direction: column;
+}
+
+.section-profile h2 {
+  width: 70vw;
+  color: $link-color;
 }
 
 .stack-grid {
   margin: 0;
   padding: 20px;
-  min-height: calc(100vh - 40px);
+  // min-height: calc(100vh - 40px);
   min-width: calc(100vw - 40px);
   display: grid;
   grid-template-columns: 100%;
@@ -230,15 +237,87 @@ body {
 
 .section-academic {
   @extend %section;
+  flex-direction: column;
+  justify-content: center;
   background-color: $section-color2;
+  color: $dark-section-text-color;
 }
+
+.section-academic h2 {
+  width: 70vw;
+  margin-top: 25px;;
+  color: $section-color1;
+}
+
+.academic-item {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 720px) {
+  .academic-item {
+    width: 51%;
+  }
+}
+
+/*------------------------------------*\
+  #SECTION 3 - WORK
+\*------------------------------------*/
 
 .section-work {
   @extend %section;
+  flex-direction: column;
+  justify-content: flex-start;
   background-color: $section-color1;
 }
 
+.section-work h2 {
+  width: 70vw;
+  margin-top: 25px;;
+}
+
+.work-item {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+  padding: 10px 0;
+  margin-bottom: 10px;
+}
+
+@media (min-width: 720px) {
+  .work-item {
+    width: 51%;
+  }
+}
+
+/*------------------------------------*\
+  #FOOTER
+\*------------------------------------*/
+
 .footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
   height: $footer-height;
   background-color: $footer-color;
+}
+
+.footer p {
+  margin-top: 25px;
+  color: $dark-section-text-color;
+}
+
+.footer p i {
+  font-size: $root-font-size;
+  color: $dark-section-text-color;
+  padding: 3px;
 }
