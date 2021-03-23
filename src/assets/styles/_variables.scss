@@ -4,8 +4,8 @@ $font-family-monospace: "Anonymous Pro", monospace;
 $font-family-sans-serif: "Open Sans", sans-serif;
 $font-family-serif: "Georgia", "Times New Roman", serif;
 
-$root-font-size: 21px;
-$root-line-height: 32px;
+$root-font-size: 16px;
+$root-line-height: 27px;
 
 $body-color: #eee;
 $footer-color: #393e46;
@@ -17,6 +17,7 @@ $text-color: #222831;
 $text-color2: #eee;
 $link-color: #393e46;
 $link-hover-color: #00adb5;
+$link-blue-color: color.adjust($link-hover-color, $blackness: +15%);
 $strong-color: color.adjust($link-hover-color, $blackness: +20%);
 
 $show-naw-width: 720px;
