@@ -1,5 +1,5 @@
 # My CV
 
-This repository contains the webpage of my Cv. 
+This repository contains my web CV.
 
 Deployed at:
