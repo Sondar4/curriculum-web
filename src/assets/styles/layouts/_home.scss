@@ -1,3 +1,33 @@
+/**
+ * CONTENTS
+ *
+ * GENERAL
+ * General...............Styles that apply to all sections: *, h1-h6, body...
+ *
+ * NAVIGATION
+ * Navigation............Styles that apply to the navigation bar.
+ *
+ * PRESENTATION
+ * Presentation..........Styles that apply to the first section.
+ * Navigation + Presentation must be 100vh if nav bar is present.
+ *
+ * PROFILE
+ * Profile...............Styles that apply to the second section.
+ * Profile must be 100vh if nav bar is present.
+ *
+ * ACADEMIC
+ * Academic..............Styles that apply to the third section.
+ * Academic must be 100vh if nav bar is present.
+ *
+ * WORK
+ * WORK..................Styles that apply to the fourth section.
+ * Work + Footer must be 100vh if nav bar is present.
+ *
+ * FOOTER
+ * Text..................Styles that apply to the footer.
+ */
+
+ 
 /*------------------------------------*\
   #GENERAL
 \*------------------------------------*/
@@ -26,9 +56,20 @@ body {
   background-color: $body-color;
 }
 
-%section {
+.section-presentation,
+.section-profile,
+.section-academic,
+.section-work {
   @extend %content-block;
-  min-height: 100vh;
+}
+
+@media (min-width: #{$show-naw-width}) {
+  .section-presentation,
+  .section-profile,
+  .section-academic,
+  .section-work {
+    min-height: 100vh;
+  }
 }
 
 .container {
@@ -131,10 +172,8 @@ h5 {
 \*------------------------------------*/
 
 .section-presentation {
-  @extend %section;
   flex-direction: column;
   justify-content: flex-start;
-  min-height: calc(100vh - #{$nav-height-hidden});
 }
 
 @media (min-width: #{$show-naw-width}) {
@@ -147,7 +186,15 @@ h5 {
   max-width: 400px;
   max-height: 400px;
   padding: 10px;
-  margin-bottom: 30px;
+  margin-bottom: 60px;
+}
+
+@media (min-width: 720px) {
+  .profile-image {
+    max-width: 500px;
+    max-height: 500px;
+    margin-top: 30px;
+  }
 }
 
 .name-and-title {
@@ -172,12 +219,6 @@ h5 {
 
 @media (min-width: 1080px) {
 
-  .profile-image {
-    max-width: 500px;
-    max-height: 500px;
-    margin-top: 30px;
-  }
-
   .name-and-title {
     margin-top: 20px;
 
@@ -197,7 +238,6 @@ h5 {
 \*------------------------------------*/
 
 .section-profile {
-  @extend %section;
   flex-direction: column;
   padding-top: 40px;
   background-color: $section-color1;
@@ -277,7 +317,6 @@ h5 {
 \*------------------------------------*/
 
 .section-academic {
-  @extend %section;
   flex-direction: column;
   justify-content: center;
   padding-top: 40px;
@@ -334,7 +373,6 @@ h5 {
 \*------------------------------------*/
 
 .section-work {
-  @extend %section;
   flex-direction: column;
   justify-content: flex-start;
   min-height: 80vh;
@@ -362,6 +400,14 @@ h5 {
 
 .work-item i {
   padding-right: 5px;
+}
+
+.work-description {
+  margin-top: 10px;
+}
+
+.work-description strong {
+  color: $link-blue-color;
 }
 
 .company-logo {

@@ -13,14 +13,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/uoc-advanced-html-css/uoc-boilerplate.git"
+    "url": "git+https://github.com/Sondar4/curriculum-web"
   },
   "author": {
     "name": "Ramon Perez",
     "email": "rperezgarcia1@uoc.edu"
   },
   "license": "MIT",
-  "homepage": "https://github.com/uoc-advanced-html-css/uoc-boilerplate#readme",
+  "homepage": "https://github.com/Sondar4/curriculum-web#readme",
   "devDependencies": {
     "@fortawesome/fontawesome-free": "^5.15.2",
     "@parcel/transformer-sass": "^2.0.0-nightly.627",

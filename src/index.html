@@ -1,101 +1,163 @@
 <!DOCTYPE html>
 
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, user-scalable=no">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
-    <title>Ramon Pérez</title>
-  </head>
-  <body>
-    <nav class="nav">
-      <ul class="nav-bar">
-        <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
-        <li class="nav-item"><a href="#academic" class="nav-link">Academic</a></li>
-        <li class="nav-item"><a href="#experience" class="nav-link">Experience</a></li>
-        <li class="nav-item"><a href="" class="nav-link">Contact</a> </li>
-      </ul>
-    </nav>
-    
-    <section class="section-presentation">
-      <div class="container name-and-title">
-        <h1>Ramon Pérez</h1>
-        <h2>Mathematician and Developer</h2>
-      </div>
-      <img src="./assets/images/perfil.jpg" alt="" class="profile-image">
-    </section>
 
-    <section class="section-profile" id="profile">
-      <h2>Stack</h2>
-      <div class="container stack-grid" id="stack-grid">
-        <div class="stack">
-          <h3 class="stack-label"><i class="fab fa-python"></i>Python</h3>
-          <p class="stack-description">My core strength is Python; I've been using this language for almost <strong>3 years</strong> since I took the first class on my erasmus at Bologna. I used it at my first job at Accenture to build a <strong>desktop app</strong> with a GUI to validate data for a financial company, and I now use it daily to build <strong>ETL's</strong> and take advantage of the many awesome libraries one can found at PyPi, like <strong>Pandas</strong> or FuzzyWuzzy.
-          </p>
-        </div>
-        <div class="stack">
-          <h3 class="stack-label"><i class="fas fa-database"></i>Data Engineering</h3>
-          <p class="stack-description">At my current position I've created and maintain a <strong>PostgreSQL</strong> database on AWS to feed the reports we prepare for our clients. At Accenture I also made a study to choose the best <strong>indexes</strong> for the tables to improve the performance of our monthly process. Moreover, during the first months of the pandemic I completed Udacity's Data Engineering nanodegree, with focus on <strong>AWS, Spark and Airflow</strong>.
-          </p>
-        </div>
-        <div class="stack">
-          <h3 class="stack-label"><i class="fas fa-code"></i>Web Dev</h3>
-          <p class="stack-description">I'm currently enroled at a Master's degree of Web Development. It has helped me to consolidate my knowledge of HTML & CSS whille learning JavaScript and <strong>modern dev tools</strong>. In this sense, now I have a solid knowledge of npm and the core web technologies plus some experience with tools like parcel or sass. I also made a crash course on <strong>Flask</strong> and it's definitely a framework I'd love to dive into.
-          </p>
-        </div>
-        <div class="stack">
-          <h3 class="stack-label"><i class="fas fa-flask"></i>Data Science</h3>
-          <p class="stack-description">With python I know how to implement <strong>statistical tests</strong>, regression, or calculate correlations, and as a mathematician I have the background to understand them. I can also perform <strong>exploratory data analysis</strong>, create data visualizations with seaborn or a reporting tool like <strong>Tableau</strong>, and on the side of machine learning I can build simple predictive models with <strong>sklearn</strong>.
-          </p>
-        </div>
-      </div>
-    </section>
-  
-    <section class="section-academic" id="academic">
-      <h2 class="section-title">Academic</h2>
-      <div class="academic-item">
-        <h4 class="academic-label"><i class="fas fa-university"></i>Master's Degree on Web App and Website Development</h4>
-        <h5 class="university">UOC (Open University of Catalonia)</h5>
-        <h5 class="study-dates">Sept 2020 - In progress</h5>
-      </div>
-      <div class="academic-item">
-        <h4 class="academic-label"><i class="fas fa-university"></i>Degree in Mathematics</h4>
-        <h5 class="university">Universitat de Barcelona / Università di Bologna</h5>
-        <h5 class="study-dates">Sept 2014 - June 2018</h5>
-        <p>240 ECTS, 24 of which carried in Italy. Focus on logic and number theory. End-of-degree project about elliptic curve cryptography and a package in wolfram language with the implementation of the main algorithms, can be found <a class="final-project-link" href="http://diposit.ub.edu/dspace/handle/2445/122629">here</a>.
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, user-scalable=no">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="./assets/styles/main.scss">
+  <title>Ramon Pérez</title>
+</head>
+
+<body>
+  <nav class="nav">
+    <ul class="nav-bar">
+      <li class="nav-item"><a href="#profile" class="nav-link">Profile</a></li>
+      <li class="nav-item"><a href="#academic" class="nav-link">Academic</a>
+      </li>
+      <li class="nav-item"><a href="#experience" class="nav-link">Experience</a>
+      </li>
+      <li class="nav-item"><a href="#footer" class="nav-link">Contact</a> </li>
+    </ul>
+  </nav>
+
+  <section class="section-presentation">
+    <div class="container name-and-title">
+      <h1>Ramon Pérez</h1>
+      <h2>Mathematician and Developer</h2>
+    </div>
+    <img src="./assets/images/perfil.jpg" alt="" class="profile-image">
+  </section>
+
+  <section class="section-profile" id="profile">
+    <h2>Stack</h2>
+    <div class="container stack-grid" id="stack-grid">
+      <div class="stack">
+        <h3 class="stack-label"><i class="fab fa-python"></i>Python</h3>
+        <p class="stack-description">My core strength is Python; I've been using
+          this language for almost <strong>3 years</strong> since I took the
+          first class on my erasmus at Bologna. I used it at my first job at
+          Accenture to build a <strong>desktop app</strong> with a GUI to
+          validate data for a financial company, and I now use it daily to build
+          <strong>ETL's</strong> and take advantage of the many awesome
+          libraries one can found at PyPi, like <strong>Pandas</strong> or
+          FuzzyWuzzy.
         </p>
       </div>
-      <h2 class="section-title">Certificates</h2>
-      <div class="academic-item">
-        <h4 class="title"><i class="fas fa-certificate"></i>Udacity's data engineering nanodegree</h4>
-        <h5 class="study-dates">April and May 2020</h5>
+      <div class="stack">
+        <h3 class="stack-label"><i class="fas fa-database"></i>Data Engineering
+        </h3>
+        <p class="stack-description">At my current position I've created and
+          maintain a <strong>PostgreSQL</strong> database on AWS to feed the
+          reports we prepare for our clients. At Accenture I also made a study
+          to choose the best <strong>indexes</strong> for the tables to improve
+          the performance of our monthly process. Moreover, during the first
+          months of the pandemic I completed Udacity's Data Engineering
+          nanodegree, with focus on <strong>AWS, Spark and Airflow</strong>.
+        </p>
       </div>
-      <div class="academic-item">
-        <h4 class="title"><i class="fas fa-certificate"></i>Cambridge English Level 2 Certificate in ESOL International (Advanced)</h4>
-        <h5 class="study-dates">Issued Jul 2016</h5>
+      <div class="stack">
+        <h3 class="stack-label"><i class="fas fa-code"></i>Web Dev</h3>
+        <p class="stack-description">I'm currently enroled at a Master's degree
+          of Web Development. It has helped me to consolidate my knowledge of
+          HTML & CSS whille learning JavaScript and <strong>modern dev
+            tools</strong>. In this sense, now I have a solid knowledge of npm
+          and the core web technologies plus some experience with tools like
+          parcel or sass. I also made a crash course on <strong>Flask</strong>
+          and it's definitely a framework I'd love to dive into.
+        </p>
       </div>
-    </section>
+      <div class="stack">
+        <h3 class="stack-label"><i class="fas fa-flask"></i>Data Science</h3>
+        <p class="stack-description">With python I know how to implement
+          <strong>statistical tests</strong>, regression, or calculate
+          correlations, and as a mathematician I have the background to
+          understand them. I can also perform <strong>exploratory data
+            analysis</strong>, create data visualizations with seaborn or a
+          reporting tool like <strong>Tableau</strong>, and on the side of
+          machine learning I can build simple predictive models with
+          <strong>sklearn</strong>.
+        </p>
+      </div>
+    </div>
+  </section>
 
-    <section class="section-work" id="experience">
-      <h2 class="section-title">Experience</h2>
-      <div class="work-item">
-        <img src="./assets/images/vetevidence.png" alt="Vetevidence logo" class="company-logo">
-        <h3 class="title"><i class="fas fa-briefcase"></i>Data Engineer</h3>
-        <h5 class="work-dates">Jul 2020 - Current position</h5>
-        <p>PostgreSQL, Python, pandas, Excel, ETL's...</p>
-      </div>
-      <div class="work-item">
-        <img src="./assets/images/accenture.png" alt="Accenture logo" class="company-logo">
-        <h3 class="title"><i class="fas fa-briefcase"></i>Technology Consulting Analyst</h3>
-        <h5 class="work-dates">Oct 2018 - Sept 2019</h5>
-        <p>I worked with Python, XML, Java, Excel, Power Point, SQL Server...</p>
-      </div>
-    </section>
+  <section class="section-academic" id="academic">
+    <h2 class="section-title">Academic</h2>
+    <div class="academic-item">
+      <h4 class="academic-label"><i class="fas fa-university"></i>Master's
+        Degree on Web App and Website Development</h4>
+      <h5 class="university">UOC (Open University of Catalonia)</h5>
+      <h5 class="study-dates">Sept 2020 - In progress</h5>
+    </div>
+    <div class="academic-item">
+      <h4 class="academic-label"><i class="fas fa-university"></i>Degree in
+        Mathematics</h4>
+      <h5 class="university">Universitat de Barcelona / Università di Bologna
+      </h5>
+      <h5 class="study-dates">Sept 2014 - June 2018</h5>
+      <p>240 ECTS, 24 of which carried in Italy. Focus on logic and number
+        theory. End-of-degree project about elliptic curve cryptography and a
+        package in wolfram language with the implementation of the main
+        algorithms, can be found <a class="final-project-link"
+          href="http://diposit.ub.edu/dspace/handle/2445/122629">here</a>.
+      </p>
+    </div>
+    <h2 class="section-title">Certificates</h2>
+    <div class="academic-item">
+      <h4 class="title"><i class="fas fa-certificate"></i>Udacity's data
+        engineering nanodegree</h4>
+      <h5 class="study-dates">April and May 2020</h5>
+    </div>
+    <div class="academic-item">
+      <h4 class="title"><i class="fas fa-certificate"></i>Cambridge English
+        Level 2 Certificate in ESOL International (Advanced)</h4>
+      <h5 class="study-dates">Issued Jul 2016</h5>
+    </div>
+  </section>
 
-    <footer class="footer">
-      <p>Follow me at <a href="https://github.com/Sondar4"><i class="fab fa-github"></i></a> and <a href="https://www.linkedin.com/in/ramon-perez-garcia/"><i class="fab fa-linkedin-in"></i></a>!</p>
-    </footer>
-  </body>
+  <section class="section-work" id="experience">
+    <h2 class="section-title">Experience</h2>
+    <div class="work-item">
+      <img src="./assets/images/vetevidence.png" alt="Vetevidence logo"
+        class="company-logo">
+      <h3 class="title"><i class="fas fa-briefcase"></i>Data Engineer</h3>
+      <h5 class="work-dates">Jul 2020 - Current position</h5>
+      <p class="work-description">At Vetevidence I work at different projects.
+        Mainly my position includes building <strong>etl's</strong> on python,
+        administrating a <strong>PostgreSQL</strong> database, and developing
+        algorithms to improve things like <strong>product
+          identification</strong>. As it is a small company, I also help on
+        <strong>business automation</strong> wherever possible.</p>
+    </div>
+    <div class="work-item">
+      <img src="./assets/images/accenture.png" alt="Accenture logo"
+        class="company-logo">
+      <h3 class="title"><i class="fas fa-briefcase"></i>Technology Consulting
+        Analyst</h3>
+      <h5 class="work-dates">Oct 2018 - Sept 2019</h5>
+      <p class="work-description">My experience at Accenture evolved between two
+        projects. The first one was a big reporting project for an international
+        bank, in which I developed a <strong>Python</strong> software with a GUI
+        to look for logical errors in the reporting data path. I also worked on
+        a script to choose the best <strong>indexes</strong> for our tables. The
+        second one was a small-sized internal project in which we worked on a
+        predictive model with <strong>Java</strong>.</p>
+    </div>
+  </section>
+
+  <footer class="footer" id="footer">
+    <p>Follow me at <a href="https://github.com/Sondar4"><i
+          class="fab fa-github"></i></a> and <a
+        href="https://www.linkedin.com/in/ramon-perez-garcia/"><i
+          class="fab fa-linkedin-in"></i></a>!</p>
+  </footer>
+
+  <script src="./assets/scripts/main.js"></script>
+</body>
+
 </html>
